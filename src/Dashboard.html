@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/output.css">
+</head>
+<body class="w-full h-full flex bg-slate-200">
+    <div class="flex w-full h-full bg-gray-600">
+        <div id="hide" class="hidden" >
+            <!-- sidebar -->
+            <aside class=" transition-all duration-300 transform  h-full bottom-0 w-64 bg-white border-e border-gray-200 pt-7 pb-10 overflow-y-auto lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 dark:bg-neutral-800 dark:border-neutral-700">
+                <div class="px-6">
+                <a class="flex-none text-3xl font-semibold dark:text-white" href="#" aria-label="Brand">Dash UI</a>
+                </div>
+                <nav class="hs-accordion-group p-6 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
+                <ul class="space-y-1.5">
+                    <li>
+                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-100 rounded-lg hover:text-gray-500 " href="#">
+                        <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        Dashboard
+                    </a>
+                    </li>
+                    <p class="gap-x-3 text-gray-700">LAYOUTS & PAGES</p>
+            
+                    <!-- pages -->
+                    <li class="hs-accordion" onclick="toggleDownPages();">
+                    <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 eutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                        <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                width="20" height="20" viewBox="0 0 303.92 303.92"
+                                xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M4.922,105.704l143.857,61.572c1.015,0.443,2.099,0.654,3.185,0.654s2.165-0.222,3.185-0.654l143.854-61.572
+                                        c3.037-1.303,4.983-4.311,4.914-7.615c-0.068-3.306-2.136-6.233-5.221-7.403L154.838,35.973c-1.859-0.709-3.905-0.709-5.759,0
+                                        L5.226,90.685c-3.085,1.17-5.152,4.103-5.224,7.403C-0.066,101.387,1.882,104.406,4.922,105.704z M151.959,52.209l122.233,46.488
+                                        l-122.233,52.32L29.724,98.698L151.959,52.209z"/>
+                                    <path d="M4.922,140.743l147.037,62.936l147.034-62.936c4.118-1.761,6.022-6.523,4.261-10.634
+                                        c-1.756-4.103-6.502-6.03-10.631-4.261L151.959,186.06L11.29,125.848c-4.116-1.764-8.873,0.153-10.634,4.261
+                                        C-1.105,134.225,0.807,138.982,4.922,140.743z"/>
+                                    <path d="M4.922,173.14l147.037,62.938l147.034-62.938c4.118-1.761,6.022-6.518,4.261-10.631
+                                        c-1.756-4.103-6.502-6.033-10.631-4.261L151.959,218.46L11.29,158.249c-4.116-1.762-8.873,0.152-10.634,4.261
+                                        C-1.105,166.623,0.807,171.379,4.922,173.14z"/>
+                                    <path d="M4.922,205.541l147.037,62.938l147.034-62.938c4.118-1.762,6.022-6.519,4.261-10.632
+                                        c-1.756-4.103-6.502-6.021-10.631-4.261L151.959,250.86L11.29,190.648c-4.116-1.761-8.873,0.153-10.634,4.261
+                                        C-1.105,199.022,0.807,203.779,4.922,205.541z"/>
+                                </g>
+                            </g>
+                            </svg>
+                        Pages
+            
+                        <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+            
+                        <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+            
+                    <div id="pages" class="hs-accordion-content pl-5 w-full overflow-hidden transition-[height] duration-300 hidden">
+                        <ul class="pt-2 ps-2">
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                Billing
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                404 Error
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    </li>
+                    <!-- end pages -->
+            
+                    <!-- Authentication -->
+                    <li class="hs-accordion" onclick="toggleDownAuthentification();" >
+                    <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 eutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="18" height="18" viewBox="0 0 256 256" xml:space="preserve">
+
+                            <defs>
+                            </defs>
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <path d="M 70.766 90 H 19.234 c -4.11 0 -7.453 -3.344 -7.453 -7.453 v -39.29 c 0 -3.44 2.338 -6.422 5.686 -7.25 c 18.269 -4.523 36.796 -4.524 55.066 0 c 3.349 0.829 5.687 3.81 5.687 7.25 v 39.29 C 78.22 86.656 74.876 90 70.766 90 z M 45 36.615 c -8.878 0 -17.756 1.091 -26.572 3.274 c -1.559 0.386 -2.647 1.771 -2.647 3.368 v 39.29 c 0 1.904 1.549 3.453 3.453 3.453 h 51.532 c 1.904 0 3.454 -1.549 3.454 -3.453 v -39.29 c 0 -1.597 -1.089 -2.982 -2.647 -3.368 C 62.756 37.707 53.878 36.615 45 36.615 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 67.3 38.878 c -1.104 0 -2 -0.896 -2 -2 V 24.299 C 65.3 13.106 56.193 4 45 4 c -11.193 0 -20.299 9.106 -20.299 20.299 v 12.579 c 0 1.104 -0.896 2 -2 2 s -2 -0.896 -2 -2 V 24.299 C 20.701 10.9 31.601 0 45 0 c 13.399 0 24.3 10.9 24.3 24.299 v 12.579 C 69.3 37.982 68.404 38.878 67.3 38.878 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 45 65.224 c -4.394 0 -7.969 -3.575 -7.969 -7.97 c 0 -4.394 3.575 -7.969 7.969 -7.969 c 4.394 0 7.969 3.575 7.969 7.969 C 52.969 61.648 49.394 65.224 45 65.224 z M 45 53.285 c -2.188 0 -3.969 1.78 -3.969 3.969 s 1.781 3.97 3.969 3.97 s 3.969 -1.781 3.969 -3.97 S 47.188 53.285 45 53.285 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 45 73.303 c -1.104 0 -2 -0.896 -2 -2 v -8.079 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 v 8.079 C 47 72.407 46.104 73.303 45 73.303 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            </g>
+                        </svg>
+                        Authentication
+            
+                        <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+            
+                        <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+            
+                    <div id="authentification" class="hs-accordion-content pl-5 w-full overflow-hidden transition-[height] duration-300 hidden">
+                        <ul class="pt-2 ps-2">
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                            Sign in
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                            Sign up
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                            Forget Password
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    </li>
+                    <!-- end Authentication -->
+            
+                    <!-- Layouts -->
+                    <li><a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm   text-gray-500 rounded-lg hover:text-gray-500 dark:hover:text-neutral-300" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="14" height="14" viewBox="0 0 256 256" xml:space="preserve">
+
+                            <defs>
+                            </defs>
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <path d="M 36.022 54.831 H 5.435 C 2.438 54.831 0 52.394 0 49.396 V 5.435 C 0 2.438 2.438 0 5.435 0 h 30.587 c 2.997 0 5.435 2.438 5.435 5.435 v 43.962 C 41.457 52.394 39.019 54.831 36.022 54.831 z M 5.435 4 C 4.644 4 4 4.644 4 5.435 v 43.962 c 0 0.791 0.644 1.435 1.435 1.435 h 30.587 c 0.791 0 1.435 -0.644 1.435 -1.435 V 5.435 C 37.457 4.644 36.813 4 36.022 4 H 5.435 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 36.022 90 H 5.435 C 2.438 90 0 87.563 0 84.565 V 69.179 c 0 -2.997 2.438 -5.435 5.435 -5.435 h 30.587 c 2.997 0 5.435 2.438 5.435 5.435 v 15.387 C 41.457 87.563 39.019 90 36.022 90 z M 5.435 67.744 C 4.644 67.744 4 68.388 4 69.179 v 15.387 C 4 85.356 4.644 86 5.435 86 h 30.587 c 0.791 0 1.435 -0.644 1.435 -1.435 V 69.179 c 0 -0.791 -0.644 -1.435 -1.435 -1.435 H 5.435 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 84.565 90 H 53.978 c -2.997 0 -5.435 -2.438 -5.435 -5.435 V 40.604 c 0 -2.997 2.438 -5.434 5.435 -5.434 h 30.588 c 2.997 0 5.435 2.438 5.435 5.434 v 43.962 C 90 87.563 87.563 90 84.565 90 z M 53.978 39.169 c -0.791 0 -1.435 0.644 -1.435 1.434 v 43.962 c 0 0.791 0.644 1.435 1.435 1.435 h 30.588 C 85.356 86 86 85.356 86 84.565 V 40.604 c 0 -0.791 -0.644 -1.434 -1.435 -1.434 H 53.978 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 84.565 26.256 H 53.978 c -2.997 0 -5.435 -2.438 -5.435 -5.435 V 5.435 C 48.543 2.438 50.98 0 53.978 0 h 30.588 C 87.563 0 90 2.438 90 5.435 v 15.387 C 90 23.818 87.563 26.256 84.565 26.256 z M 53.978 4 c -0.791 0 -1.435 0.644 -1.435 1.435 v 15.387 c 0 0.791 0.644 1.435 1.435 1.435 h 30.588 c 0.791 0 1.435 -0.644 1.435 -1.435 V 5.435 C 86 4.644 85.356 4 84.565 4 H 53.978 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            </g>
+                        </svg>
+                        Layouts
+                    </a></li>
+                    <!-- end layout -->
+
+                    <p class="gap-x-3 text-gray-700">UI COMPONENTS</p>
+
+                    <!-- Components -->
+                    <li class="hs-accordion" onclick="toggleDownComponents();">
+                        <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 eutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="14" height="14" viewBox="0 0 256 256" xml:space="preserve">
+
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                    <path d="M 82.117 69.583 H 7.883 C 3.537 69.583 0 66.047 0 61.7 V 14.807 c 0 -4.347 3.537 -7.883 7.883 -7.883 h 74.234 c 4.347 0 7.883 3.537 7.883 7.883 V 61.7 C 90 66.047 86.464 69.583 82.117 69.583 z M 7.883 10.923 C 5.742 10.923 4 12.666 4 14.807 V 61.7 c 0 2.141 1.742 3.883 3.883 3.883 h 74.234 c 2.141 0 3.883 -1.742 3.883 -3.883 V 14.807 c 0 -2.141 -1.742 -3.883 -3.883 -3.883 H 7.883 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path d="M 55.855 81.22 H 34.144 c -1.104 0 -2 -0.896 -2 -2 V 67.583 c 0 -1.104 0.896 -2 2 -2 h 21.711 c 1.104 0 2 0.896 2 2 V 79.22 C 57.855 80.324 56.96 81.22 55.855 81.22 z M 36.144 77.22 h 17.711 v -7.637 H 36.144 V 77.22 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path d="M 67.024 81.22 H 22.976 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 44.049 c 1.104 0 2 0.896 2 2 S 68.129 81.22 67.024 81.22 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                                </svg>
+                            Components
+                
+                            <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                
+                            <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+                
+                        <div id="components" class="hs-accordion-content pl-5 w-full overflow-hidden transition-[height] duration-300 hidden">
+                            <ul class="pt-2 ps-2">
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Accordions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Alerts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Badges
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Breadcrumb
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Buttons
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Buttons Group
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Cards
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Carousel
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Close Buttons
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Collapse
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Dropdowns
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Listgroup
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Modal 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Navs 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Navbar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Offcanvas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Overlays
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Pagination
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Popover
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Progress
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Spinners
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Tables
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Toast
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Tooltips
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </li>
+                        <!-- end Components -->
+
+                        <!-- Menu -->
+                    <li class="hs-accordion" onclick="toggleDownMenuLevel();">
+                        <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                        <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        Menu Level
+                
+                        <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                
+                        <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+                
+                        <div id="menuLevel" onclick="toggleDownMenuLevel1();" class="hs-accordion-content pl-5 w-full overflow-hidden transition-[height] duration-300 hidden">
+                        <ul class="hs-accordion-group ps-3 pt-2" data-hs-accordion-always-open>
+                            <li class="hs-accordion" id="level1">
+                            <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 eutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                                Two Level
+                
+                                <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                
+                                <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                            </button>
+                
+                            <div id="users-accordion-sub-1" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden">
+                                <ul class="pt-2 ps-2">
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                    NavItem 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                    NavItem 2
+                                    </a>
+                                </li>
+                               
+                                </ul>
+                            </div>
+                            </li>
+                            <li class="hs-accordion" id="users-accordion-sub-2">
+                            <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 eutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                                Three Level
+                
+                                <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                
+                                <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                            </button>
+                
+                            <div id="users-accordion-sub-2" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden ps-2">
+                                <ul class="pt-2 ps-2">
+                                    <li class="hs-accordion" id="users-accordion-sub-2">
+                                        <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 eutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                                            Three Level
+                            
+                                            <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                            
+                                            <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                        </button>
+                                    </li>
+                                    <div class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden ps-2">
+                                        <ul class="pt-2 ps-2">
+                                            <li>
+                                                NavChildItem 1
+                                            </li>
+                                            <li>
+                                                NavChildItem 2
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                    NavItem 2
+                                    </a>
+                                </li>
+                                </ul>
+                            </div>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <!-- end menu -->
+
+                    <p class="gap-x-3 text-gray-700">DOCUMENTATION</p>
+
+                    <li>
+                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-500 rounded-lg hover:text-gray-300 al-400 dark:hover:text-neutral-300" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="18" height="18" viewBox="0 0 256 256" xml:space="preserve">
+
+                            <defs>
+                            </defs>
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <path d="M 73.383 90 H 16.617 c -2.57 0 -4.661 -2.091 -4.661 -4.661 V 17.985 c 0 -2.57 2.091 -4.661 4.661 -4.661 h 10.729 c 0.552 0 1 0.448 1 1 s -0.448 1 -1 1 H 16.617 c -1.467 0 -2.661 1.193 -2.661 2.661 v 67.354 c 0 1.468 1.193 2.661 2.661 2.661 h 56.766 c 1.468 0 2.661 -1.193 2.661 -2.661 V 17.985 c 0 -1.467 -1.193 -2.661 -2.661 -2.661 H 62.653 c -0.553 0 -1 -0.448 -1 -1 s 0.447 -1 1 -1 h 10.729 c 2.57 0 4.661 2.091 4.661 4.661 v 67.354 C 78.044 87.909 75.953 90 73.383 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 62.653 19.978 H 27.347 c -0.552 0 -1 -0.448 -1 -1 v -5.622 c 0 -3.545 2.884 -6.429 6.429 -6.429 h 3.664 C 37.283 2.92 40.816 0 45 0 s 7.717 2.92 8.561 6.928 h 3.664 c 3.545 0 6.429 2.884 6.429 6.429 v 5.622 C 63.653 19.53 63.206 19.978 62.653 19.978 z M 28.347 17.978 h 33.307 v -4.622 c 0 -2.442 -1.986 -4.429 -4.429 -4.429 h -4.518 c -0.512 0 -0.94 -0.386 -0.994 -0.895 C 51.349 4.594 48.463 2 45 2 c -3.463 0 -6.349 2.594 -6.712 6.033 c -0.054 0.509 -0.483 0.895 -0.995 0.895 h -4.518 c -2.442 0 -4.429 1.987 -4.429 4.429 V 17.978 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 27.213 39.609 c -0.028 0 -0.057 -0.001 -0.085 -0.004 c -0.311 -0.026 -0.591 -0.196 -0.758 -0.459 l -3.168 -4.979 c -0.296 -0.466 -0.159 -1.084 0.307 -1.38 c 0.465 -0.297 1.084 -0.159 1.38 0.307 l 2.466 3.875 l 6.45 -7.091 c 0.372 -0.408 1.005 -0.438 1.413 -0.067 c 0.409 0.372 0.438 1.004 0.067 1.413 l -7.331 8.06 C 27.763 39.491 27.494 39.609 27.213 39.609 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 27.213 59.132 c -0.028 0 -0.057 -0.001 -0.085 -0.004 c -0.311 -0.026 -0.591 -0.196 -0.758 -0.459 l -3.168 -4.979 c -0.296 -0.466 -0.159 -1.084 0.307 -1.381 c 0.467 -0.296 1.083 -0.158 1.381 0.307 l 2.466 3.875 l 6.45 -7.091 c 0.372 -0.407 1.005 -0.439 1.413 -0.066 c 0.409 0.371 0.438 1.004 0.067 1.412 l -7.331 8.059 C 27.763 59.014 27.494 59.132 27.213 59.132 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 27.213 78.656 c -0.028 0 -0.057 -0.001 -0.085 -0.004 c -0.311 -0.026 -0.591 -0.196 -0.758 -0.459 l -3.168 -4.979 c -0.296 -0.466 -0.159 -1.084 0.307 -1.381 c 0.465 -0.296 1.084 -0.157 1.38 0.307 l 2.466 3.875 l 6.45 -7.091 c 0.372 -0.407 1.005 -0.438 1.413 -0.067 c 0.409 0.372 0.438 1.005 0.067 1.413 l -7.331 8.06 C 27.763 78.538 27.494 78.656 27.213 78.656 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 65.955 35.948 H 42.19 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 23.765 c 0.553 0 1 0.448 1 1 S 66.508 35.948 65.955 35.948 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 65.955 55.472 H 42.19 c -0.552 0 -1 -0.447 -1 -1 s 0.448 -1 1 -1 h 23.765 c 0.553 0 1 0.447 1 1 S 66.508 55.472 65.955 55.472 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 65.955 74.995 H 42.19 c -0.552 0 -1 -0.447 -1 -1 s 0.448 -1 1 -1 h 23.765 c 0.553 0 1 0.447 1 1 S 66.508 74.995 65.955 74.995 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            </g>
+                            </svg>
+                        Docs
+                    </a> 
+                    </li>
+
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-500 rounded-lg hover:text-gray-300 al-400 dark:hover:text-neutral-300" href="#">
+                            <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 10v4H1l3 3M3 8V4h16l-3-3M9 8l2-1v4"/>
+                            </svg>
+                            Changelog
+                        </a> 
+                    </li>
+
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-500 rounded-lg hover:text-gray-300 al-400 dark:hover:text-neutral-300" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="18" height="18" viewBox="0 0 256 256" xml:space="preserve">
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                    <path d="M 66.31 44.465 c -0.845 -0.712 -2.107 -0.604 -2.818 0.239 L 47 64.261 V 2 c 0 -1.104 -0.896 -2 -2 -2 s -2 0.896 -2 2 v 62.261 L 26.508 44.705 c -0.712 -0.845 -1.974 -0.952 -2.818 -0.24 c -0.845 0.712 -0.952 1.974 -0.24 2.818 l 20.021 23.741 c 0.016 0.019 0.037 0.032 0.053 0.051 c 0.058 0.064 0.12 0.121 0.185 0.177 c 0.041 0.034 0.079 0.07 0.122 0.101 c 0.072 0.052 0.149 0.095 0.228 0.138 c 0.042 0.023 0.082 0.049 0.126 0.068 c 0.092 0.041 0.19 0.071 0.289 0.098 c 0.035 0.01 0.068 0.025 0.104 0.032 c 0.136 0.029 0.276 0.046 0.421 0.046 c 0.145 0 0.285 -0.017 0.421 -0.046 c 0.036 -0.008 0.07 -0.023 0.105 -0.033 c 0.098 -0.027 0.195 -0.056 0.287 -0.097 c 0.045 -0.02 0.086 -0.047 0.129 -0.07 c 0.077 -0.042 0.153 -0.084 0.224 -0.135 c 0.045 -0.032 0.085 -0.069 0.127 -0.105 c 0.063 -0.054 0.124 -0.11 0.18 -0.172 c 0.017 -0.019 0.039 -0.033 0.056 -0.053 L 66.55 47.283 C 67.262 46.439 67.154 45.177 66.31 44.465 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path d="M 82.295 90 H 7.706 c -1.104 0 -2 -0.896 -2 -2 V 65.892 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 V 86 h 70.589 V 65.892 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 V 88 C 84.295 89.104 83.399 90 82.295 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                            </svg>
+                            Download
+                        </a> 
+                    </li>
+                </ul>
+                </nav>
+            </aside>
+            <!-- End Sidebar -->
+        </div>
+
+        <div class="relative bg-slate-200 h-full w-full">
+            <!-- header -->
+            <div class=" bg-white flex items-center justify-between h-16 mx-auto w-full px-4">
+                <div class="flex items-center">
+                    <div id="hiddenMenu" class="pl-2 pr-5 " onclick="toggleHidden()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list cursor-pointer" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                        
+                    </div>
+                    <div class=" hidden md:block ">
+                        <input type="text" placeholder="Search" class="text-sm px-4 h-10 w-64 border rounded-lg ring-indigo-700">
+                    </div>
+                </div>
+                <!-- side buttom -->
+                <div class="flex space-x-2 items-center "> 
+                    <div class="bg-blue-400 cursor-pointer p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20" height="20" viewBox="0 0 256 256" xml:space="preserve">
+
+                            <defs>
+                            </defs>
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <path d="M 77.012 80.843 H 12.988 c -2.892 0 -5.244 -2.353 -5.244 -5.244 c 0 -3.573 1.558 -6.954 4.275 -9.274 c 1.826 -1.56 2.873 -3.831 2.873 -6.232 V 36.539 C 14.893 19.938 28.399 6.431 45 6.431 c 16.602 0 30.107 13.506 30.107 30.107 v 23.553 c 0 2.402 1.047 4.673 2.873 6.231 c 2.717 2.321 4.275 5.702 4.275 9.275 C 82.256 78.49 79.903 80.843 77.012 80.843 z M 45 10.431 c -14.396 0 -26.107 11.712 -26.107 26.107 v 23.553 c 0 3.574 -1.559 6.954 -4.275 9.274 c -1.826 1.559 -2.873 3.831 -2.873 6.232 c 0 0.686 0.558 1.244 1.244 1.244 h 64.023 c 0.686 0 1.244 -0.559 1.244 -1.244 c 0 -2.401 -1.047 -4.674 -2.873 -6.233 c -2.717 -2.319 -4.275 -5.699 -4.275 -9.273 V 36.539 C 71.107 22.143 59.396 10.431 45 10.431 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 59.614 90 H 30.386 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 29.229 c 1.104 0 2 0.896 2 2 S 60.719 90 59.614 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 45 10.431 c -1.104 0 -2 -0.896 -2 -2 V 2 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 v 6.431 C 47 9.536 46.104 10.431 45 10.431 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="bg-blue-400 cursor-pointer p-1 space-x-3 rounded-full">
+                        <svg fill="#000000" width="27" height="27" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contenue -->  
+
+            <section class="text-gray-600 h-full w-full ">
+
+                <!-- en tête -->
+                <div class="w-full bg-indigo-700 items-center pt-36 dark:bg-indigo-600 h-72"> 
+                    <div class=" mx-6 px-7 gap-2 flex justify-between">
+                        <p class="text-3xl text-blue-50">Projects</p>
+                        <button class="bg-blue-50 px-2 text-sm md:block rounded-md">Create New Project</button>
+                    </div>
+                </div>
+
+                <!-- Grides -->
+              <div class="w-full px-5 -mt-20 ">
+                <div class="flex flex-wrap ">
+                  <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 bg-white px-4 py-6 rounded-lg">
+                      <div class="flex justify-between font-medium text-black text-xl my-4 ">
+                        <p>Projects</p>
+                        <p>
+                            <svg class=" rounded-lg bg-violet-200 p-2" width="50" height="50" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 14C14 10.6863 16.6863 8 20 8H29C32.3137 8 35 10.6863 35 14V16H14V14Z" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <rect x="4" y="16" width="40" height="24" rx="2" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 25L24 30L44 25" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M44 23V29" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 23V29" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M26.5 23C26.5 24.3807 25.3807 25.5 24 25.5C22.6193 25.5 21.5 24.3807 21.5 23C21.5 21.6193 22.6193 20.5 24 20.5C25.3807 20.5 26.5 21.6193 26.5 23Z" fill="#000000"/>
+                            </svg>
+                        </p>
+                      </div>
+                      <h2 class="title-font font-semibold text-3xl text-gray-900">18</h2>
+                      <p class="leading-relaxed">2 Completed</p>
+                    </div>
+                  </div>
+                  <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 bg-white px-4 py-6 rounded-lg">
+                        <div class="flex justify-between font-medium text-black text-xl my-4 ">
+                            <p>Active Task</p>
+                            <p>
+                                <svg class=" rounded-lg bg-violet-200 p-2" fill="#000000" width="50" height="50" viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                    <g id="_x37_11-_menu__x2C__ui__x2C__user_interface__x2C_">
+                                
+                                    <g>
+                                
+                                    <g>
+                                
+                                    <path d="M486.25,118.43H162.314c-3.705,0-6.708-3.003-6.708-6.708s3.003-6.708,6.708-6.708H486.25     c3.705,0,6.708,3.003,6.708,6.708S489.955,118.43,486.25,118.43z"/>
+                                
+                                    </g>
+                                
+                                    <g>
+                                
+                                    <path d="M486.25,263.185H162.314c-3.705,0-6.708-3.003-6.708-6.708s3.003-6.708,6.708-6.708H486.25     c3.705,0,6.708,3.003,6.708,6.708S489.955,263.185,486.25,263.185z"/>
+                                
+                                    </g>
+                                
+                                    <g>
+                                
+                                    <path d="M486.25,407.998H162.314c-3.705,0-6.708-3.003-6.708-6.708s3.003-6.708,6.708-6.708H486.25     c3.705,0,6.708,3.003,6.708,6.708S489.955,407.998,486.25,407.998z"/>
+                                
+                                    </g>
+                                
+                                    <g>
+                                
+                                    <path d="M45.129,136.845c-13.861,0-25.138-11.27-25.138-25.123c0-13.86,11.277-25.136,25.138-25.136     c13.877,0,25.167,11.275,25.167,25.136C70.296,125.575,59.006,136.845,45.129,136.845z M45.129,100.002     c-6.463,0-11.721,5.258-11.721,11.72c0,6.455,5.258,11.707,11.721,11.707c6.479,0,11.75-5.252,11.75-11.707     C56.879,105.26,51.608,100.002,45.129,100.002z"/>
+                                
+                                    </g>
+                                
+                                    <g>
+                                
+                                    <path d="M45.129,281.605c-13.861,0-25.138-11.272-25.138-25.129s11.277-25.129,25.138-25.129     c13.877,0,25.167,11.272,25.167,25.129S59.006,281.605,45.129,281.605z M45.129,244.764c-6.463,0-11.721,5.255-11.721,11.713     s5.258,11.713,11.721,11.713c6.479,0,11.75-5.255,11.75-11.713S51.608,244.764,45.129,244.764z"/>
+                                
+                                    </g>
+                                
+                                    <g>
+                                
+                                    <path d="M45.129,426.367c-13.861,0-25.138-11.249-25.138-25.077c0-13.885,11.277-25.18,25.138-25.18     c13.877,0,25.167,11.295,25.167,25.18C70.296,415.118,59.006,426.367,45.129,426.367z M45.129,389.526     c-6.463,0-11.721,5.277-11.721,11.764c0,6.43,5.258,11.661,11.721,11.661c6.479,0,11.75-5.231,11.75-11.661     C56.879,394.804,51.608,389.526,45.129,389.526z"/>
+                                
+                                    </g>
+                                
+                                    </g>
+                                
+                                    </g>
+                                
+                                    <g id="Layer_1"/>
+                                
+                                </svg>
+                            </p>
+                        </div>
+                      <h2 class="title-font font-semibold text-3xl text-gray-900">132</h2>
+                      <p class="leading-relaxed">28 Completed</p>
+                    </div>
+                  </div>
+                  <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 bg-white px-4 py-6 rounded-lg">
+                        <div class="flex justify-between font-medium text-black text-xl my-4 ">
+                            <p>Teams</p>
+                            <p>
+                                <svg class=" rounded-lg bg-violet-200 p-2" width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 18C3 15.3945 4.66081 13.1768 6.98156 12.348C7.61232 12.1227 8.29183 12 9 12C9.70817 12 10.3877 12.1227 11.0184 12.348C11.3611 12.4703 11.6893 12.623 12 12.8027C12.3107 12.623 12.6389 12.4703 12.9816 12.348C13.6123 12.1227 14.2918 12 15 12C15.7082 12 16.3877 12.1227 17.0184 12.348C19.3392 13.1768 21 15.3945 21 18V21H15.75V19.5H19.5V18C19.5 15.5147 17.4853 13.5 15 13.5C14.4029 13.5 13.833 13.6163 13.3116 13.8275C14.3568 14.9073 15 16.3785 15 18V21H3V18ZM9 11.25C8.31104 11.25 7.66548 11.0642 7.11068 10.74C5.9977 10.0896 5.25 8.88211 5.25 7.5C5.25 5.42893 6.92893 3.75 9 3.75C10.2267 3.75 11.3158 4.33901 12 5.24963C12.6842 4.33901 13.7733 3.75 15 3.75C17.0711 3.75 18.75 5.42893 18.75 7.5C18.75 8.88211 18.0023 10.0896 16.8893 10.74C16.3345 11.0642 15.689 11.25 15 11.25C14.311 11.25 13.6655 11.0642 13.1107 10.74C12.6776 10.4869 12.2999 10.1495 12 9.75036C11.7001 10.1496 11.3224 10.4869 10.8893 10.74C10.3345 11.0642 9.68896 11.25 9 11.25ZM13.5 18V19.5H4.5V18C4.5 15.5147 6.51472 13.5 9 13.5C11.4853 13.5 13.5 15.5147 13.5 18ZM11.25 7.5C11.25 8.74264 10.2426 9.75 9 9.75C7.75736 9.75 6.75 8.74264 6.75 7.5C6.75 6.25736 7.75736 5.25 9 5.25C10.2426 5.25 11.25 6.25736 11.25 7.5ZM15 5.25C13.7574 5.25 12.75 6.25736 12.75 7.5C12.75 8.74264 13.7574 9.75 15 9.75C16.2426 9.75 17.25 8.74264 17.25 7.5C17.25 6.25736 16.2426 5.25 15 5.25Z" fill="#080341"/>
+                                </svg>
+                            </p>
+                        </div>
+                      <h2 class="title-font font-semibold text-3xl text-gray-900">12</h2>
+                      <p class="leading-relaxed">1 Completed</p>
+                    </div>
+                  </div>
+                  <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 bg-white px-4 py-6 rounded-lg">
+                        <div class="flex justify-between font-medium text-black text-xl my-4 ">
+                            <p>Productivity</p>
+                            <p>
+                                <svg class=" rounded-lg bg-violet-200 p-2" fill="#000000" height="50" width="50" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 512 512" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M256,0C114.84,0,0,114.842,0,256s114.84,256,256,256s256-114.842,256-256S397.16,0,256,0z M256,462.452
+                                            c-113.837,0-206.452-92.614-206.452-206.452S142.163,49.548,256,49.548S462.452,142.163,462.452,256S369.837,462.452,256,462.452z
+                                            "/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M256,132.129c-68.302,0-123.871,55.569-123.871,123.871S187.698,379.871,256,379.871S379.871,324.302,379.871,256
+                                            S324.302,132.129,256,132.129z M256,330.323c-40.983,0-74.323-33.341-74.323-74.323c0-40.982,33.339-74.323,74.323-74.323
+                                            s74.323,33.341,74.323,74.323C330.323,296.981,296.983,330.323,256,330.323z"/>
+                                    </g>
+                                </g>
+                                </svg>
+                            </p>
+                        </div>
+                      <h2 class="title-font font-semibold text-3xl text-gray-900">76%</h2>
+                      <p class="leading-relaxed">5% Completed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- tableau -->
+              <div class="p-10 ">
+                <p class="border-4 border-b-2 flex bg-white p-4 items-center h-16 mt-12 rounded-t-xl">
+                    Active Projects
+                </p>
+                <table class="w-full -mt-1 border-4 bg-white">
+                    
+                    <thead class="text-left h-16">
+                        <tr class="bg-gray-300">
+                            <th class="p-4">Project name</th>
+                            <th class="p-4">Hours</th>
+                            <th class="p-4">Priority</th>
+                            <th class="p-4">Members</th>
+                            <th class="p-4">Progress</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dropbox -->
+                        <tr class="border h-16">
+
+                            <td>
+                                <p class="flex items-center space-x-4">
+                                    <svg class="border ml-4 p-1" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                            width="50" height="50" viewBox="0 0 33.848 33.848"
+                                            xml:space="preserve">
+                                        <g>
+                                        <path d="M26.97,13.193c2.297,1.838,4.578,3.666,6.877,5.506c-0.084,0.061-0.151,0.113-0.226,0.16
+                                            c-3.174,2.069-6.346,4.141-9.518,6.215c-0.143,0.094-0.234,0.119-0.385-0.006c-2.201-1.847-4.408-3.687-6.615-5.527
+                                            c-0.052-0.043-0.104-0.086-0.179-0.146c-2.334,1.948-4.646,3.878-6.967,5.812c-3.315-2.164-6.618-4.32-9.958-6.5
+                                            c2.311-1.852,4.588-3.676,6.885-5.514c-2.297-1.84-4.576-3.666-6.875-5.506C0.1,7.621,0.168,7.568,0.24,7.521
+                                            c3.164-2.066,6.33-4.133,9.494-6.199c0.129-0.084,0.223-0.154,0.386-0.018c2.221,1.865,4.449,3.721,6.676,5.578
+                                            c0.034,0.026,0.071,0.051,0.144,0.102c-3.367,2.08-6.695,4.135-10.053,6.209c3.355,2.072,6.681,4.125,10.038,6.197
+                                            c3.358-2.072,6.685-4.125,10.04-6.197c-3.361-2.076-6.686-4.129-10.029-6.195c0.085-0.078,0.148-0.137,0.214-0.193
+                                            c2.172-1.812,4.346-3.622,6.515-5.44c0.163-0.137,0.272-0.166,0.47-0.037c3.16,2.072,6.326,4.138,9.49,6.203
+                                            c0.064,0.043,0.131,0.09,0.223,0.154C31.556,9.521,29.277,11.345,26.97,13.193z M16.949,20.643
+                                            c-2.335,1.937-4.659,3.863-6.987,5.798c-0.991-0.646-1.969-1.283-2.988-1.949c0,0.736-0.006,1.412,0.007,2.088
+                                            c0.001,0.068,0.097,0.158,0.169,0.201c3.209,1.93,6.42,3.854,9.629,5.783c0.119,0.069,0.208,0.079,0.333,0.006
+                                            c3.217-1.935,6.437-3.863,9.648-5.802c0.082-0.049,0.152-0.186,0.156-0.284c0.021-0.353,0.009-0.706,0.009-1.058
+                                            c0-0.295,0-0.588,0-0.937c-1.022,0.668-1.996,1.304-2.985,1.949C21.604,24.502,19.283,22.579,16.949,20.643z"/>
+                                        </g>
+                                    </svg> 
+                                    <span class="hover:text-violet-600 cursor-pointer">Dropbox Design System</span>
+                                </p> 
+                            </td>
+                            <td>34</td>
+                            <td>
+                                <p class="text-white text-sm bg-orange-400 rounded">Medium</p>
+                            </td>
+                            <td>
+                                <p class="">
+                                    <div class="flex -space-x-3 overflow-hidden">
+                                        <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                        <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                        <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="">
+                                        <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                        <div class="h-8 bg-blue-500 text-white w-8 rounded-full ring-2 items-center justify-center cursor-pointer hover:shrink-0">+5</div>
+                                    </div>
+                                </p>
+                            </td>
+                            <td>
+                                <div class="flex space-x-3 w-60 items-center">
+                                    <div class="mb-1 text-base font-medium">15%</div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                        <div class="bg-violet-700 h-2.5 rounded-full" style="width: 15%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- slack team -->
+                        <tr class="border h-16">
+                            <td>
+                                <p class="flex items-center space-x-4">
+                                    <svg class="border ml-4 p-1" width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.06607 1C7.84995 1.0009 6.86574 1.98584 6.86664 3.19953C6.86574 4.41322 7.85085 5.39816 9.06697 5.39906H11.2673V3.20043C11.2682 1.98674 10.2831 1.00179 9.06607 1ZM9.06607 6.86661H3.20033C1.98422 6.8675 0.999104 7.85245 1 9.06614C0.998205 10.2798 1.98332 11.2648 3.19943 11.2666H9.06607C10.2822 11.2657 11.2673 10.2807 11.2664 9.06703C11.2673 7.85245 10.2822 6.8675 9.06607 6.86661Z" fill="#000000"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23 9.06614C23.0009 7.85245 22.0158 6.8675 20.7996 6.86661C19.5835 6.8675 18.5984 7.85245 18.5993 9.06614V11.2666H20.7996C22.0158 11.2657 23.0009 10.2807 23 9.06614ZM17.1333 9.06614V3.19953C17.1342 1.98674 16.15 1.00179 14.9338 1C13.7177 1.0009 12.7326 1.98584 12.7335 3.19953V9.06614C12.7317 10.2798 13.7168 11.2648 14.9329 11.2666C16.1491 11.2657 17.1342 10.2807 17.1333 9.06614Z" fill="#000000"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9329 23C16.149 22.9991 17.1341 22.0141 17.1332 20.8004C17.1341 19.5867 16.149 18.6018 14.9329 18.6009H12.7326V20.8004C12.7317 22.0133 13.7168 22.9982 14.9329 23ZM14.9329 17.1324H20.7996C22.0157 17.1315 23.0008 16.1466 22.9999 14.9329C23.0017 13.7192 22.0166 12.7342 20.8005 12.7324H14.9338C13.7177 12.7333 12.7326 13.7183 12.7335 14.932C12.7326 16.1466 13.7168 17.1315 14.9329 17.1324Z" fill="#000000"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.00024 14.9327C0.999346 16.1464 1.98446 17.1313 3.20058 17.1322C4.4167 17.1313 5.40182 16.1464 5.40092 14.9327V12.7331H3.20058C1.98446 12.734 0.999346 13.719 1.00024 14.9327ZM6.86691 14.9327V20.7993C6.86512 22.013 7.85023 22.998 9.06635 22.9998C10.2825 22.9989 11.2676 22.0139 11.2667 20.8002V14.9345C11.2685 13.7208 10.2834 12.7358 9.06725 12.734C7.85023 12.734 6.86601 13.719 6.86691 14.9327Z" fill="#000000"/>
+                                    </svg> 
+                                    <span class="hover:text-violet-600 cursor-pointer">Slack Team UI Design</span>
+                                </p>
+                            </td>
+                            <td>47</td>
+                            <td>
+                                <p class="text-white text-sm bg-red-500 rounded-sm">High</p>
+                            </td>
+                            <td>
+                                <p>
+                                <div class="flex -space-x-3 overflow-hidden">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <div class="h-8 bg-blue-500 text-white w-8 rounded-full ring-2 items-center justify-center cursor-pointer hover:shrink-0">+5</div>
+                                  </div>
+                            </p>
+                            </td>
+                            <td>
+                                <div class="flex space-x-3 w-60 items-center">
+                                    <div class="mb-1 text-base font-medium">35%</div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                        <div class="bg-violet-700 h-2.5 rounded-full" style="width: 35%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- git hub -->
+                        <tr class="border h-16">
+                            <td>
+                                <p class="flex items-center space-x-4">
+                                    <svg class="border ml-4 p-1" width="50" height="50" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+                                        <title>github [#142]</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <defs>
+                                    
+                                                </defs>
+                                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                                <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]">
+                                    
+                                                </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span class="hover:text-violet-600 cursor-pointer">GitHub Satellite</span>
+                                </p>
+                            </td>
+                            <td>120</td>
+                            <td>
+                                <p class="text-white text-sm bg-blue-400 rounded-sm">Low</p>
+                            </td>
+                            <td>
+                                <p>
+                                <div class="flex -space-x-3 overflow-hidden">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <div class="h-8 bg-blue-500 text-white w-8 rounded-full ring-2 items-center justify-center cursor-pointer hover:shrink-0">+5</div>
+                                  </div>
+                            </p>
+                            </td>
+                            <td>
+                                <div class="flex space-x-3 w-60 items-center">
+                                    <div class="mb-1 text-base font-medium">75%</div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                        <div class="bg-violet-700 h-2.5 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- 3d Character Modelling -->
+                        <tr class="border h-16">
+                            <td>
+                                <p class="flex items-center space-x-4">
+                                    <svg class="border ml-4 p-1" fill="#000000" height="50" width="50" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                        viewBox="0 0 330.435 330.435" xml:space="preserve">
+                                        <path d="M288.126,114.785c-23.619,0-29.959,11.185-34.123,11.185s-8.184,0-8.184,0c-0.556,0-1.103,0.029-1.645,0.083
+                                        c-26.36,0.861-47.604,22.107-48.466,48.469c-0.054,0.539-0.082,1.088-0.082,1.642v21.89c0,9.973-8.113,18.088-18.086,18.088
+                                        c-9.974,0-18.088-8.115-18.088-18.088v-65.67c0-0.553-0.028-1.103-0.084-1.642c-0.878-26.912-22.987-48.551-50.109-48.551
+                                        s-49.231,21.639-50.109,48.551c-0.054,0.538-0.082,1.089-0.082,1.642v21.89c0,9.973-8.115,18.084-18.087,18.084h-22.01
+                                        C10.105,172.357,0,179.546,0,188.41c0,8.865,10.105,16.053,18.972,16.053h22.01c0.555,0,1.102-0.028,1.645-0.082
+                                        c26.36-0.861,47.604-22.104,48.465-48.466c0.055-0.539,0.083-1.088,0.083-1.642v-21.89c0-9.973,8.113-18.088,18.086-18.088
+                                        c9.973,0,18.087,8.115,18.087,18.088v65.67c0,0.553,0.028,1.104,0.084,1.642c0.877,26.912,22.987,48.551,50.109,48.551
+                                        s49.231-21.639,50.109-48.551c0.054-0.538,0.083-1.088,0.083-1.642v-21.89c0-9.973,8.115-18.087,18.087-18.087c0,0,4.02,0,8.184,0
+                                        s10.504,11.185,34.123,11.185c23.366,0,42.309-12.194,42.309-27.237C330.435,126.979,311.493,114.785,288.126,114.785z"/>
+                                    </svg>
+                                    <span class="hover:text-violet-600 cursor-pointer">3D Character Modelling</span>
+                                </p>
+                            </td>
+                            <td>89</td>
+                            <td>
+                                <p class="text-white text-sm bg-orange-400 rounded">Medium</p>
+                            </td>
+                            <td>
+                                <p>
+                                <div class="flex -space-x-3 overflow-hidden">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <div class="h-8 bg-blue-500 text-white w-8 rounded-full ring-2 items-center justify-center cursor-pointer hover:shrink-0">+5</div>
+                                  </div>
+                            </p>
+                            </td>
+                            <td>
+                                <div class="flex space-x-3 w-60 items-center">
+                                    <div class="mb-1 text-base font-medium">63%</div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                        <div class="bg-violet-700 h-2.5 rounded-full" style="width: 63%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- webapp dsys -->
+                        <tr class="border h-16">
+                            <td>
+                                <p class="flex items-center space-x-4">
+                                    <svg class="border ml-4 p-1" fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                        width="50" height="50" viewBox="0 0 303.92 303.92"
+                                        xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path d="M4.922,105.704l143.857,61.572c1.015,0.443,2.099,0.654,3.185,0.654s2.165-0.222,3.185-0.654l143.854-61.572
+                                                    c3.037-1.303,4.983-4.311,4.914-7.615c-0.068-3.306-2.136-6.233-5.221-7.403L154.838,35.973c-1.859-0.709-3.905-0.709-5.759,0
+                                                    L5.226,90.685c-3.085,1.17-5.152,4.103-5.224,7.403C-0.066,101.387,1.882,104.406,4.922,105.704z M151.959,52.209l122.233,46.488
+                                                    l-122.233,52.32L29.724,98.698L151.959,52.209z"/>
+                                                <path d="M4.922,140.743l147.037,62.936l147.034-62.936c4.118-1.761,6.022-6.523,4.261-10.634
+                                                    c-1.756-4.103-6.502-6.03-10.631-4.261L151.959,186.06L11.29,125.848c-4.116-1.764-8.873,0.153-10.634,4.261
+                                                    C-1.105,134.225,0.807,138.982,4.922,140.743z"/>
+                                                <path d="M4.922,173.14l147.037,62.938l147.034-62.938c4.118-1.761,6.022-6.518,4.261-10.631
+                                                    c-1.756-4.103-6.502-6.033-10.631-4.261L151.959,218.46L11.29,158.249c-4.116-1.762-8.873,0.152-10.634,4.261
+                                                    C-1.105,166.623,0.807,171.379,4.922,173.14z"/>
+                                                <path d="M4.922,205.541l147.037,62.938l147.034-62.938c4.118-1.762,6.022-6.519,4.261-10.632
+                                                    c-1.756-4.103-6.502-6.021-10.631-4.261L151.959,250.86L11.29,190.648c-4.116-1.761-8.873,0.153-10.634,4.261
+                                                    C-1.105,199.022,0.807,203.779,4.922,205.541z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span class="hover:text-violet-600 cursor-pointer">Webapp Design System</span>
+                                </p>
+                            </td>
+                            <td>108</td>
+                            <td>
+                                <p class="text-white text-sm bg-green-800 rounded-sm">Track</p>
+                            </td>
+                            <td>
+                                <p>
+                                <div class="flex -space-x-3 overflow-hidden">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <div class="h-8 bg-blue-500 text-white w-8 rounded-full ring-2 items-center justify-center cursor-pointer hover:shrink-0">+5</div>
+                                  </div>
+                            </p>
+                            </td>
+                            <td>
+                                <div class="flex space-x-3 w-60 items-center">
+                                    <div class="mb-1 text-base font-medium">100%</div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                        <div class="bg-violet-700 h-2.5 rounded-full" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- git event -->
+                        <tr class="border h-16">
+                            <td>
+                                <p class="flex items-center space-x-4">
+                                    <svg class="border ml-4 p-1" width="50" height="50" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+                                        <title>github [#142]</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <defs>
+                                    
+                                                </defs>
+                                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                                <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]">
+                                    
+                                                </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span class="hover:text-violet-600 cursor-pointer">Github Event Design</span>
+                                </p>
+                            </td>
+                            <td>120</td>
+                            <td>
+                                <p class="text-white text-sm bg-blue-400 rounded-sm">Low</p>
+                            </td>
+                            <td>
+                                <p>
+                                <div class="flex -space-x-3 overflow-hidden">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="">
+                                    <img class="hover:place-content-stretch cursor-pointer inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    <div class="h-8 bg-blue-500 text-white w-8 rounded-full ring-2 items-center justify-center cursor-pointer hover:shrink-0">+5</div>
+                                  </div>
+                            </p>
+                            </td>
+                            <td>
+                                <div class="flex space-x-3 w-60 items-center">
+                                    <div class="mb-1 text-base font-medium">75%</div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                        <div class="bg-violet-700 h-2.5 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="border-4 border-t-2 -mt-1 flex bg-white items-center h-16 justify-center w-full rounded-b-xl">
+                    <a href="#" class="text-indigo-700 cursor-pointer w-full text-center hover:text-indigo-900">View All Projects</a>
+                </p>
+              </div>
+
+              <div class="grid grid-cols-2">
+                <!-- perf -->
+                <div>
+
+                </div>
+
+                <!-- teams -->
+                <div class="w-full">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Role</th>
+                                <th>Last Activity</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+              </div>
+
+              <!-- footer -->
+            <div class="flex p-4 border-gray-300 border-t-4 h-full w-full justify-between">
+                <div class="flex gap-3">
+                    <p>Made by</p>
+                    <a href="https://codescandy.com/" class="text-violet-800">Codescandy</a>
+                </div>
+                <div class="flex gap-3">
+                    <p>Destributed by</p>
+                    <a href="https://themewagon.com/" class="text-violet-800">ThemeWagon</a>
+                </div>
+            </div>
+            </section>
+             
+        </div>
+    </div>
+   <script src="../script.js"></script>
+</body>
+</html>
