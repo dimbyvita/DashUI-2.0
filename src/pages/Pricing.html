@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashUI 2.0</title>
+    <link rel="stylesheet" href="../../public/output.css">
+</head>
+<body class="w-full h-full flex bg-slate-200">
+    <div class="flex w-full h-full bg-gray-600">
+        <div id="hide" class="hidden" >
+            <!-- sidebar -->
+            <aside class=" transition-all duration-300 transform  h-full bottom-0 w-64 bg-white border-e border-gray-200 pt-7 pb-10 overflow-y-auto lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 dark:bg-neutral-800 dark:border-neutral-700">
+                <div class="px-6">
+                <a class="flex-none text-3xl font-semibold dark:text-white" href="#" aria-label="Brand">Dash UI</a>
+                </div>
+                <nav class="hs-accordion-group p-6 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
+                <ul class="space-y-1.5">
+                    <li>
+                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-100 rounded-lg hover:text-gray-500 " href="../Dashboard.html">
+                        <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        Dashboard
+                    </a>
+                    </li>
+                    <p class="gap-x-3 text-gray-700">LAYOUTS & PAGES</p>
+            
+                    <!-- pages -->
+                    <li class="hs-accordion" onclick="toggleDownPages();">
+                    <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 eutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                        <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                width="20" height="20" viewBox="0 0 303.92 303.92"
+                                xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M4.922,105.704l143.857,61.572c1.015,0.443,2.099,0.654,3.185,0.654s2.165-0.222,3.185-0.654l143.854-61.572
+                                        c3.037-1.303,4.983-4.311,4.914-7.615c-0.068-3.306-2.136-6.233-5.221-7.403L154.838,35.973c-1.859-0.709-3.905-0.709-5.759,0
+                                        L5.226,90.685c-3.085,1.17-5.152,4.103-5.224,7.403C-0.066,101.387,1.882,104.406,4.922,105.704z M151.959,52.209l122.233,46.488
+                                        l-122.233,52.32L29.724,98.698L151.959,52.209z"/>
+                                    <path d="M4.922,140.743l147.037,62.936l147.034-62.936c4.118-1.761,6.022-6.523,4.261-10.634
+                                        c-1.756-4.103-6.502-6.03-10.631-4.261L151.959,186.06L11.29,125.848c-4.116-1.764-8.873,0.153-10.634,4.261
+                                        C-1.105,134.225,0.807,138.982,4.922,140.743z"/>
+                                    <path d="M4.922,173.14l147.037,62.938l147.034-62.938c4.118-1.761,6.022-6.518,4.261-10.631
+                                        c-1.756-4.103-6.502-6.033-10.631-4.261L151.959,218.46L11.29,158.249c-4.116-1.762-8.873,0.152-10.634,4.261
+                                        C-1.105,166.623,0.807,171.379,4.922,173.14z"/>
+                                    <path d="M4.922,205.541l147.037,62.938l147.034-62.938c4.118-1.762,6.022-6.519,4.261-10.632
+                                        c-1.756-4.103-6.502-6.021-10.631-4.261L151.959,250.86L11.29,190.648c-4.116-1.761-8.873,0.153-10.634,4.261
+                                        C-1.105,199.022,0.807,203.779,4.922,205.541z"/>
+                                </g>
+                            </g>
+                            </svg>
+                        Pages
+            
+                        <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+            
+                        <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+            
+                    <div id="pages" class="hs-accordion-content pl-5 w-full overflow-hidden transition-[height] duration-300 hidden">
+                        <ul class="pt-2 ps-2">
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="./Profil.html">
+                                Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="./Setting.html">
+                                Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="./Billing.html">
+                                Billing
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="./Pricing.html">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="./Error.html">
+                                404 Error
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    </li>
+                    <!-- end pages -->
+            
+                    <!-- Authentication -->
+                    <li class="hs-accordion" onclick="toggleDownAuthentification();" >
+                    <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 eutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="18" height="18" viewBox="0 0 256 256" xml:space="preserve">
+
+                            <defs>
+                            </defs>
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <path d="M 70.766 90 H 19.234 c -4.11 0 -7.453 -3.344 -7.453 -7.453 v -39.29 c 0 -3.44 2.338 -6.422 5.686 -7.25 c 18.269 -4.523 36.796 -4.524 55.066 0 c 3.349 0.829 5.687 3.81 5.687 7.25 v 39.29 C 78.22 86.656 74.876 90 70.766 90 z M 45 36.615 c -8.878 0 -17.756 1.091 -26.572 3.274 c -1.559 0.386 -2.647 1.771 -2.647 3.368 v 39.29 c 0 1.904 1.549 3.453 3.453 3.453 h 51.532 c 1.904 0 3.454 -1.549 3.454 -3.453 v -39.29 c 0 -1.597 -1.089 -2.982 -2.647 -3.368 C 62.756 37.707 53.878 36.615 45 36.615 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 67.3 38.878 c -1.104 0 -2 -0.896 -2 -2 V 24.299 C 65.3 13.106 56.193 4 45 4 c -11.193 0 -20.299 9.106 -20.299 20.299 v 12.579 c 0 1.104 -0.896 2 -2 2 s -2 -0.896 -2 -2 V 24.299 C 20.701 10.9 31.601 0 45 0 c 13.399 0 24.3 10.9 24.3 24.299 v 12.579 C 69.3 37.982 68.404 38.878 67.3 38.878 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 45 65.224 c -4.394 0 -7.969 -3.575 -7.969 -7.97 c 0 -4.394 3.575 -7.969 7.969 -7.969 c 4.394 0 7.969 3.575 7.969 7.969 C 52.969 61.648 49.394 65.224 45 65.224 z M 45 53.285 c -2.188 0 -3.969 1.78 -3.969 3.969 s 1.781 3.97 3.969 3.97 s 3.969 -1.781 3.969 -3.97 S 47.188 53.285 45 53.285 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 45 73.303 c -1.104 0 -2 -0.896 -2 -2 v -8.079 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 v 8.079 C 47 72.407 46.104 73.303 45 73.303 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            </g>
+                        </svg>
+                        Authentication
+            
+                        <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+            
+                        <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+            
+                    <div id="authentification" class="hs-accordion-content pl-5 w-full overflow-hidden transition-[height] duration-300 hidden">
+                        <ul class="pt-2 ps-2">
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                            Sign in
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                            Sign up
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                            Forget Password
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    </li>
+                    <!-- end Authentication -->
+            
+                    <!-- Layouts -->
+                    <li><a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm   text-gray-500 rounded-lg hover:text-gray-500 dark:hover:text-neutral-300" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="14" height="14" viewBox="0 0 256 256" xml:space="preserve">
+
+                            <defs>
+                            </defs>
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <path d="M 36.022 54.831 H 5.435 C 2.438 54.831 0 52.394 0 49.396 V 5.435 C 0 2.438 2.438 0 5.435 0 h 30.587 c 2.997 0 5.435 2.438 5.435 5.435 v 43.962 C 41.457 52.394 39.019 54.831 36.022 54.831 z M 5.435 4 C 4.644 4 4 4.644 4 5.435 v 43.962 c 0 0.791 0.644 1.435 1.435 1.435 h 30.587 c 0.791 0 1.435 -0.644 1.435 -1.435 V 5.435 C 37.457 4.644 36.813 4 36.022 4 H 5.435 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 36.022 90 H 5.435 C 2.438 90 0 87.563 0 84.565 V 69.179 c 0 -2.997 2.438 -5.435 5.435 -5.435 h 30.587 c 2.997 0 5.435 2.438 5.435 5.435 v 15.387 C 41.457 87.563 39.019 90 36.022 90 z M 5.435 67.744 C 4.644 67.744 4 68.388 4 69.179 v 15.387 C 4 85.356 4.644 86 5.435 86 h 30.587 c 0.791 0 1.435 -0.644 1.435 -1.435 V 69.179 c 0 -0.791 -0.644 -1.435 -1.435 -1.435 H 5.435 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 84.565 90 H 53.978 c -2.997 0 -5.435 -2.438 -5.435 -5.435 V 40.604 c 0 -2.997 2.438 -5.434 5.435 -5.434 h 30.588 c 2.997 0 5.435 2.438 5.435 5.434 v 43.962 C 90 87.563 87.563 90 84.565 90 z M 53.978 39.169 c -0.791 0 -1.435 0.644 -1.435 1.434 v 43.962 c 0 0.791 0.644 1.435 1.435 1.435 h 30.588 C 85.356 86 86 85.356 86 84.565 V 40.604 c 0 -0.791 -0.644 -1.434 -1.435 -1.434 H 53.978 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 84.565 26.256 H 53.978 c -2.997 0 -5.435 -2.438 -5.435 -5.435 V 5.435 C 48.543 2.438 50.98 0 53.978 0 h 30.588 C 87.563 0 90 2.438 90 5.435 v 15.387 C 90 23.818 87.563 26.256 84.565 26.256 z M 53.978 4 c -0.791 0 -1.435 0.644 -1.435 1.435 v 15.387 c 0 0.791 0.644 1.435 1.435 1.435 h 30.588 c 0.791 0 1.435 -0.644 1.435 -1.435 V 5.435 C 86 4.644 85.356 4 84.565 4 H 53.978 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            </g>
+                        </svg>
+                        Layouts
+                    </a></li>
+                    <!-- end layout -->
+
+                    <p class="gap-x-3 text-gray-700">UI COMPONENTS</p>
+
+                    <!-- Components -->
+                    <li class="hs-accordion" onclick="toggleDownComponents();">
+                        <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 eutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="14" height="14" viewBox="0 0 256 256" xml:space="preserve">
+
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                    <path d="M 82.117 69.583 H 7.883 C 3.537 69.583 0 66.047 0 61.7 V 14.807 c 0 -4.347 3.537 -7.883 7.883 -7.883 h 74.234 c 4.347 0 7.883 3.537 7.883 7.883 V 61.7 C 90 66.047 86.464 69.583 82.117 69.583 z M 7.883 10.923 C 5.742 10.923 4 12.666 4 14.807 V 61.7 c 0 2.141 1.742 3.883 3.883 3.883 h 74.234 c 2.141 0 3.883 -1.742 3.883 -3.883 V 14.807 c 0 -2.141 -1.742 -3.883 -3.883 -3.883 H 7.883 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path d="M 55.855 81.22 H 34.144 c -1.104 0 -2 -0.896 -2 -2 V 67.583 c 0 -1.104 0.896 -2 2 -2 h 21.711 c 1.104 0 2 0.896 2 2 V 79.22 C 57.855 80.324 56.96 81.22 55.855 81.22 z M 36.144 77.22 h 17.711 v -7.637 H 36.144 V 77.22 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path d="M 67.024 81.22 H 22.976 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 44.049 c 1.104 0 2 0.896 2 2 S 68.129 81.22 67.024 81.22 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                                </svg>
+                            Components
+                
+                            <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                
+                            <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+                
+                        <div id="components" class="hs-accordion-content pl-5 w-full overflow-hidden transition-[height] duration-300 hidden">
+                            <ul class="pt-2 ps-2">
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Accordions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Alerts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Badges
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Breadcrumb
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Buttons
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Buttons Group
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Cards
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Carousel
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Close Buttons
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Collapse
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Dropdowns
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Listgroup
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Modal 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Navs 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Navbar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Offcanvas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Overlays
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Pagination
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Popover
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Progress
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Spinners
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Tables
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Toast
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                        Tooltips
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </li>
+                        <!-- end Components -->
+
+                        <!-- Menu -->
+                    <li class="hs-accordion" onclick="toggleDownMenuLevel();">
+                        <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                        <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        Menu Level
+                
+                        <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                
+                        <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+                
+                        <div id="menuLevel" onclick="toggleDownMenuLevel1();" class="hs-accordion-content pl-5 w-full overflow-hidden transition-[height] duration-300 hidden">
+                        <ul class="hs-accordion-group ps-3 pt-2" data-hs-accordion-always-open>
+                            <li class="hs-accordion" id="level1">
+                            <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 eutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                                Two Level
+                
+                                <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                
+                                <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                            </button>
+                
+                            <div id="users-accordion-sub-1" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden">
+                                <ul class="pt-2 ps-2">
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                    NavItem 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                    NavItem 2
+                                    </a>
+                                </li>
+                               
+                                </ul>
+                            </div>
+                            </li>
+                            <li class="hs-accordion" id="users-accordion-sub-2">
+                            <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 eutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                                Three Level
+                
+                                <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                
+                                <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                            </button>
+                
+                            <div id="users-accordion-sub-2" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden ps-2">
+                                <ul class="pt-2 ps-2">
+                                    <li class="hs-accordion" id="users-accordion-sub-2">
+                                        <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 eutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white">
+                                            Three Level
+                            
+                                            <svg class="hs-accordion-active:block ms-auto hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                            
+                                            <svg class="hs-accordion-active:hidden ms-auto block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                        </button>
+                                    </li>
+                                    <div class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden ps-2">
+                                        <ul class="pt-2 ps-2">
+                                            <li>
+                                                NavChildItem 1
+                                            </li>
+                                            <li>
+                                                NavChildItem 2
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <li>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:text-gray-500 al-400 dark:hover:text-neutral-300" href="#">
+                                    NavItem 2
+                                    </a>
+                                </li>
+                                </ul>
+                            </div>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <!-- end menu -->
+
+                    <p class="gap-x-3 text-gray-700">DOCUMENTATION</p>
+
+                    <li>
+                    <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-500 rounded-lg hover:text-gray-300 al-400 dark:hover:text-neutral-300" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="18" height="18" viewBox="0 0 256 256" xml:space="preserve">
+
+                            <defs>
+                            </defs>
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <path d="M 73.383 90 H 16.617 c -2.57 0 -4.661 -2.091 -4.661 -4.661 V 17.985 c 0 -2.57 2.091 -4.661 4.661 -4.661 h 10.729 c 0.552 0 1 0.448 1 1 s -0.448 1 -1 1 H 16.617 c -1.467 0 -2.661 1.193 -2.661 2.661 v 67.354 c 0 1.468 1.193 2.661 2.661 2.661 h 56.766 c 1.468 0 2.661 -1.193 2.661 -2.661 V 17.985 c 0 -1.467 -1.193 -2.661 -2.661 -2.661 H 62.653 c -0.553 0 -1 -0.448 -1 -1 s 0.447 -1 1 -1 h 10.729 c 2.57 0 4.661 2.091 4.661 4.661 v 67.354 C 78.044 87.909 75.953 90 73.383 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 62.653 19.978 H 27.347 c -0.552 0 -1 -0.448 -1 -1 v -5.622 c 0 -3.545 2.884 -6.429 6.429 -6.429 h 3.664 C 37.283 2.92 40.816 0 45 0 s 7.717 2.92 8.561 6.928 h 3.664 c 3.545 0 6.429 2.884 6.429 6.429 v 5.622 C 63.653 19.53 63.206 19.978 62.653 19.978 z M 28.347 17.978 h 33.307 v -4.622 c 0 -2.442 -1.986 -4.429 -4.429 -4.429 h -4.518 c -0.512 0 -0.94 -0.386 -0.994 -0.895 C 51.349 4.594 48.463 2 45 2 c -3.463 0 -6.349 2.594 -6.712 6.033 c -0.054 0.509 -0.483 0.895 -0.995 0.895 h -4.518 c -2.442 0 -4.429 1.987 -4.429 4.429 V 17.978 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 27.213 39.609 c -0.028 0 -0.057 -0.001 -0.085 -0.004 c -0.311 -0.026 -0.591 -0.196 -0.758 -0.459 l -3.168 -4.979 c -0.296 -0.466 -0.159 -1.084 0.307 -1.38 c 0.465 -0.297 1.084 -0.159 1.38 0.307 l 2.466 3.875 l 6.45 -7.091 c 0.372 -0.408 1.005 -0.438 1.413 -0.067 c 0.409 0.372 0.438 1.004 0.067 1.413 l -7.331 8.06 C 27.763 39.491 27.494 39.609 27.213 39.609 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 27.213 59.132 c -0.028 0 -0.057 -0.001 -0.085 -0.004 c -0.311 -0.026 -0.591 -0.196 -0.758 -0.459 l -3.168 -4.979 c -0.296 -0.466 -0.159 -1.084 0.307 -1.381 c 0.467 -0.296 1.083 -0.158 1.381 0.307 l 2.466 3.875 l 6.45 -7.091 c 0.372 -0.407 1.005 -0.439 1.413 -0.066 c 0.409 0.371 0.438 1.004 0.067 1.412 l -7.331 8.059 C 27.763 59.014 27.494 59.132 27.213 59.132 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 27.213 78.656 c -0.028 0 -0.057 -0.001 -0.085 -0.004 c -0.311 -0.026 -0.591 -0.196 -0.758 -0.459 l -3.168 -4.979 c -0.296 -0.466 -0.159 -1.084 0.307 -1.381 c 0.465 -0.296 1.084 -0.157 1.38 0.307 l 2.466 3.875 l 6.45 -7.091 c 0.372 -0.407 1.005 -0.438 1.413 -0.067 c 0.409 0.372 0.438 1.005 0.067 1.413 l -7.331 8.06 C 27.763 78.538 27.494 78.656 27.213 78.656 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 65.955 35.948 H 42.19 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 23.765 c 0.553 0 1 0.448 1 1 S 66.508 35.948 65.955 35.948 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 65.955 55.472 H 42.19 c -0.552 0 -1 -0.447 -1 -1 s 0.448 -1 1 -1 h 23.765 c 0.553 0 1 0.447 1 1 S 66.508 55.472 65.955 55.472 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 65.955 74.995 H 42.19 c -0.552 0 -1 -0.447 -1 -1 s 0.448 -1 1 -1 h 23.765 c 0.553 0 1 0.447 1 1 S 66.508 74.995 65.955 74.995 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            </g>
+                            </svg>
+                        Docs
+                    </a> 
+                    </li>
+
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-500 rounded-lg hover:text-gray-300 al-400 dark:hover:text-neutral-300" href="#">
+                            <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 10v4H1l3 3M3 8V4h16l-3-3M9 8l2-1v4"/>
+                            </svg>
+                            Changelog
+                        </a> 
+                    </li>
+
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-500 rounded-lg hover:text-gray-300 al-400 dark:hover:text-neutral-300" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="18" height="18" viewBox="0 0 256 256" xml:space="preserve">
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                    <path d="M 66.31 44.465 c -0.845 -0.712 -2.107 -0.604 -2.818 0.239 L 47 64.261 V 2 c 0 -1.104 -0.896 -2 -2 -2 s -2 0.896 -2 2 v 62.261 L 26.508 44.705 c -0.712 -0.845 -1.974 -0.952 -2.818 -0.24 c -0.845 0.712 -0.952 1.974 -0.24 2.818 l 20.021 23.741 c 0.016 0.019 0.037 0.032 0.053 0.051 c 0.058 0.064 0.12 0.121 0.185 0.177 c 0.041 0.034 0.079 0.07 0.122 0.101 c 0.072 0.052 0.149 0.095 0.228 0.138 c 0.042 0.023 0.082 0.049 0.126 0.068 c 0.092 0.041 0.19 0.071 0.289 0.098 c 0.035 0.01 0.068 0.025 0.104 0.032 c 0.136 0.029 0.276 0.046 0.421 0.046 c 0.145 0 0.285 -0.017 0.421 -0.046 c 0.036 -0.008 0.07 -0.023 0.105 -0.033 c 0.098 -0.027 0.195 -0.056 0.287 -0.097 c 0.045 -0.02 0.086 -0.047 0.129 -0.07 c 0.077 -0.042 0.153 -0.084 0.224 -0.135 c 0.045 -0.032 0.085 -0.069 0.127 -0.105 c 0.063 -0.054 0.124 -0.11 0.18 -0.172 c 0.017 -0.019 0.039 -0.033 0.056 -0.053 L 66.55 47.283 C 67.262 46.439 67.154 45.177 66.31 44.465 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path d="M 82.295 90 H 7.706 c -1.104 0 -2 -0.896 -2 -2 V 65.892 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 V 86 h 70.589 V 65.892 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 V 88 C 84.295 89.104 83.399 90 82.295 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                            </svg>
+                            Download
+                        </a> 
+                    </li>
+                </ul>
+                </nav>
+            </aside>
+            <!-- End Sidebar -->
+        </div>
+
+
+        <div class="relative bg-slate-200 h-full w-full">
+             <!-- header -->
+             <div class=" bg-white flex items-center justify-between h-16 mx-auto w-full px-4">
+                <div class="flex items-center">
+                    <div id="hiddenMenu" class="pl-2 pr-5 " onclick="toggleHidden()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list cursor-pointer" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                        
+                    </div>
+                    <div class=" hidden md:block ">
+                        <input type="text" placeholder="Search" class="text-sm px-4 h-10 w-64 border rounded-lg ring-indigo-700">
+                    </div>
+                </div>
+                <!-- side buttom -->
+                <div class="flex space-x-2 items-center "> 
+                    <div class="bg-blue-400 cursor-pointer p-2 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20" height="20" viewBox="0 0 256 256" xml:space="preserve">
+    
+                            <defs>
+                            </defs>
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <path d="M 77.012 80.843 H 12.988 c -2.892 0 -5.244 -2.353 -5.244 -5.244 c 0 -3.573 1.558 -6.954 4.275 -9.274 c 1.826 -1.56 2.873 -3.831 2.873 -6.232 V 36.539 C 14.893 19.938 28.399 6.431 45 6.431 c 16.602 0 30.107 13.506 30.107 30.107 v 23.553 c 0 2.402 1.047 4.673 2.873 6.231 c 2.717 2.321 4.275 5.702 4.275 9.275 C 82.256 78.49 79.903 80.843 77.012 80.843 z M 45 10.431 c -14.396 0 -26.107 11.712 -26.107 26.107 v 23.553 c 0 3.574 -1.559 6.954 -4.275 9.274 c -1.826 1.559 -2.873 3.831 -2.873 6.232 c 0 0.686 0.558 1.244 1.244 1.244 h 64.023 c 0.686 0 1.244 -0.559 1.244 -1.244 c 0 -2.401 -1.047 -4.674 -2.873 -6.233 c -2.717 -2.319 -4.275 -5.699 -4.275 -9.273 V 36.539 C 71.107 22.143 59.396 10.431 45 10.431 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 59.614 90 H 30.386 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 29.229 c 1.104 0 2 0.896 2 2 S 60.719 90 59.614 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <path d="M 45 10.431 c -1.104 0 -2 -0.896 -2 -2 V 2 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 v 6.431 C 47 9.536 46.104 10.431 45 10.431 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="bg-blue-400 cursor-pointer p-1 space-x-3 rounded-full">
+                        <svg fill="#000000" width="27" height="27" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- contenu de la page -->
+            <section class="text-gray-600 h-full w-full">
+                <!-- Finding Plan -->
+                <div class="bg-gray-100 justify-center">
+                    <div class="mx-auto max-w-full px-80 sm:px-96  lg:px-8">
+                      <div class="m-24 max-w-xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+                        <h2 class="text-6xl font-bold text-gray-900">Find a plan that s right for you</h2>
+                        <div class="flex items-center">
+                            <p class="pr-5 text-gray-700"> Or simply leverage the expertise of our consultation team.</p>
+                            <button class="text-sm border border-violet-900 text-violet-900 hover:bg-violet-900 hover:text-white p-3 rounded-md"> Takl to us</button>
+                        </div>
+
+                        <!-- Plan for you -->
+                        <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+                            <!-- Standard -->
+                          <div class="group m-7 relative bg-white p-6 rounded-md ">
+                              <h2 class="text-2xl text-gray-900 p-2">Standard</h2>
+                           <p class="text-sm">For early-stage startups that want to spend more time developing and less on manual operations.</p>
+                            <p class="text-5xl m-2  font-bold">$49 <span class="text-sm font-normal">/mo</span></p>
+                            <button class=" m-5 text-sm border border-violet-900 text-violet-900 hover:bg-violet-900 hover:text-white p-3 rounded-md"> Buy Standard</button>
+                            <div class="border border-b-black h-1 m-10"></div>
+                            <p class="">All core features, including</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                Only Basic Components</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                <span class="font-semibold space-x-2">12+</span>Adv. Components</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                <span class="font-semibold space-x-2">5 - </span>Landing page</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                <span class="font-semibold space-x-2">3 </span>Dashboard Layouts</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                Documentation</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                Access to support forums</p>
+                          </div>
+
+                          <!-- Multisite -->
+                          <div class="group m-7 relative bg-white p-6 rounded-md ">
+                              <h2 class="text-2xl text-gray-900 p-2">Multisite</h2>
+                            <p class="text-sm">For agile startups that want to grow their revenue with quick experiments and data-driven decision making.</p>
+                            <p class="text-5xl m-2  font-bold">$149 <span class="text-sm font-normal">/mo</span></p>
+                            <button class=" m-5 text-sm border border-violet-900 bg-violet-800 text-white hover:bg-violet-900 hover:text-white p-3 rounded-md"> Buy Multisite</button>
+                            <div class="border border-b-black h-1 m-10"></div>
+                            <p class="">Everything in Standard +:</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                Offline viewing</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                <span class="font-semibold space-x-2">Unlimited</span>projects</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                <span class="font-semibold space-x-2">Unlimited</span>storage</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                Custom domain support</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                Bulk editing</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                12 / 5 support</p>
+                          </div>
+
+                          <!-- Extended -->
+                          <div class="group m-7 relative bg-white p-6 rounded-md ">
+                              <h2 class="text-2xl text-gray-900 p-2">Extended</h2>
+                            <p class="text-sm">For fast-growth scaleups that want to grow by maximizing efficiencies in their revenue operations.</p>
+                           <p class="text-5xl  m-2 font-bold">$490<span class="text-sm font-normal">/mo</span></p>
+                            <button class=" m-5 text-sm border border-violet-900 text-violet-900 hover:bg-violet-900 hover:text-white p-3 rounded-md"> Buy Extended</button>
+                            <div class="border border-b-black h-1 m-10"></div>
+                            <p class="">Everything in Multisite +</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                Workshop</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                <span class="font-semibold space-x-2">Dedicated</span>hardware</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                <span class="font-semibold space-x-2">99.9% uptime</span>guarantee</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                Advanced analytics</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                3rd party integrations</p>
+                            <p class="contenue p-1 space-x-3 flex items-center">
+                                <svg class="h-6 w-6 flex-none fill-white stroke-green-500 stroke-2">
+                                        <circle cx="12" cy="12" r="8" />
+                                        <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                                    </svg>
+                                24 / 7 support</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+        
+
+            <!-- footer -->
+            <div class="md:flex p-4 border-gray-300 border-t-4 h-full w-full justify-between">
+            <div class="flex gap-2 text-sm">
+                <p>Made by</p>
+                <a href="https://codescandy.com/" class="text-indigo-800">Codescandy</a>
+            </div>
+            <div class="flex gap-2 text-sm">
+                <p>Destributed by</p>
+                <a href="https://themewagon.com/" class="text-indigo-800">ThemeWagon</a>
+                </div>
+            </div>
+            </section>
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>
